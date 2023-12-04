@@ -13,17 +13,13 @@
             margin: 20px;
         }
 
-        header {
+        header, nav, section, footer {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        h1 {
+        h1, h2 {
             color: #008080;
-        }
-
-        p {
-            line-height: 1.6;
         }
 
         img {
@@ -38,23 +34,19 @@
             margin-bottom: 20px;
         }
 
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
         nav a {
             margin: 0 10px;
             text-decoration: none;
             color: #008080;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #008080;
-            color: #fff;
+        .animation {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -72,20 +64,20 @@
     <section id="about">
         <p>El Mgasseb, un coin magique attaché au gouvernorat de Bèja du nord-ouest de la Tunisie situé à une centaine de kilomètres de Tunis et à une cinquantaine de kilomètres de la frontière tuniso-algérienne, précisément à Nefza.</p>
         
-        <img src="elmgasseb-190620-1.jpg" alt="Photo plage EL Mgasseb" />
+        <img src="elmgasseb-190620-1.jpg" alt="Photo plage EL Mgasseb" class="animation">
         
         <p>Cet endroit très spécial près du barrage de Sidi El Barrak vous permet de préparer la nourriture, des tentes et des glacières pour une escapade extraordinaire à travers un camping fantastique et une baignade magnifique. Surtout si vous pensez à une grillade délicieuse au bord de la mer dans une ambiance sympathique.</p>
     </section>
     
     <section id="gallery" class="image-container">
-        <img src="téléchargé.jpg" alt="Photo plage EL Mgasseb" />
-        <img src="téléchargé1.jpg" alt="Photo plage EL Mgasseb" />
-        <img src="camping-beja-mgasseb-160818-01.jpg" alt="Photo plage EL Mgasseb" />
-        <img src="39665608_2100280030223651_1696488025808175104_o.jpg" alt="Photo plage EL Mgasseb" />
+        <img src="téléchargé.jpg" alt="Photo plage EL Mgasseb" class="animation">
+        <img src="téléchargé1.jpg" alt="Photo plage EL Mgasseb" class="animation">
+        <img src="camping-beja-mgasseb-160818-01.jpg" alt="Photo plage EL Mgasseb" class="animation">
+        <img src="39665608_2100280030223651_1696488025808175104_o.jpg" alt="Photo plage EL Mgasseb" class="animation">
     </section>
 
     <section id="contact">
-        <h1>CONTACTEZ-NOUS</h1>
+        <h2>CONTACTEZ-NOUS</h2>
         <p>Adresse: [Votre Adresse]</p>
         <p>Email: [Votre Email]</p>
         <p>Téléphone: [Votre Numéro de Téléphone]</p>
