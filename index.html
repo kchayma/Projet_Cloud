@@ -53,7 +53,20 @@
             transition: all 0.3s ease;
         }
 
-        /* Ajoutez cette classe aux éléments que vous souhaitez animer */
+        /* Ajoutez ceci dans la balise <style> */
+        #video-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #video-gallery iframe {
+            width: 48%;
+        }
+
+        .weather-widget {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -88,42 +101,59 @@
         <img src="39665608_2100280030223651_1696488025808175104_o.jpg" alt="Photo plage EL Mgasseb" class="animation">
     </section>
 
-    <section id="contact">
-        <h2>CONTACTEZ-NOUS</h2>
-        <p>Adresse: [EL Mgasseb_Béja]</p>
-        <p>Email: [chaymakhedhri16@gmail.com]</p>
-        <p>Téléphone: [25040xxx]</p>
+    <section id="activities">
+        <h2>Activités</h2>
+        <p>Découvrez les activités passionnantes disponibles au camping, y compris la randonnée, la pêche, le barbecue et bien plus encore.</p>
     </section>
 
-    <section id="testimonials">
-        <h2>Témoignages</h2>
-        <div class="testimonial">
-            <p>Le camping à El Mgasseb était incroyable. Nous avons adoré l'ambiance paisible et la belle plage.</p>
-            <p><em>- Nom Chayma KHEDHRI</em></p>
-        </div>
-        <!-- Ajoutez d'autres témoignages au besoin -->
+    <!-- Ajoutez ce bouton de réservation -->
+    <button onclick="window.location.href='#reservation'">Réservez Maintenant</button>
+
+    <!-- Ajoutez une galerie vidéo -->
+    <section id="video-gallery">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        <!-- Ajoutez d'autres vidéos au besoin -->
     </section>
-<footer>
+
+    <!-- Ajoutez une section "Conseils de Voyage" -->
+    <section id="travel-tips">
+        <h2>Conseils de Voyage</h2>
+        <p>Préparez-vous pour une expérience fantastique au camping El Mgasseb. Voici quelques conseils utiles :</p>
+        <ul>
+            <li>Emportez des vêtements appropriés pour toutes les conditions météorologiques.</li>
+            <li>Explorez les sentiers de randonnée pour découvrir la beauté naturelle environnante.</li>
+            <li>N'oubliez pas d'apporter des fournitures pour les activités que vous prévoyez faire.</li>
+        </ul>
+    </section>
+
+    <!-- Ajoutez un widget météo -->
+    <div class="weather-widget">
+        <a class="weatherwidget-io" href="https://forecast7.com/fr/36d6503d09/beja/" data-label_1="BÉJA" data-font="Roboto" data-icons="Climacons Animated" data-theme="original" >BÉJA Weather forecast</a>
+    </div>
+
     <!-- Ajoutez cette balise dans la section où vous souhaitez afficher la carte -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
+    <div id="googleMap" style="height:400px;width:100%;"></div>
 
-<script>
-    function initMap() {
-        var myLatLng = {lat: 36.650002, lng: 9.083333}; // Remplacez par les coordonnées de votre emplacement
-        var map = new google.maps.Map(document.getElementById('googleMap'), {
-            center: myLatLng,
-            zoom: 14
-        });
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Camping El Mgasseb, Béja'
-        });
-    }
-</script>
+    <script>
+        function initMap() {
+            var myLatLng = {lat: 36.650002, lng: 9.083333}; // Remplacez par les coordonnées de votre emplacement
+            var map = new google.maps.Map(document.getElementById('googleMap'), {
+                center: myLatLng,
+                zoom: 14
+            });
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Camping El Mgasseb, Béja'
+            });
+        }
+    </script>
+    <!-- Remplacez "VOTRE_CLE_API" par votre clé API Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap"></script>
 
-<!-- Remplacez "VOTRE_CLE_API" par votre clé API Google Maps -->
-<script async defer src="https://maps.googleapis.com/maps/place/EL+MGASEB+المقاصب%E2%80%AD/@37.0660583,8.9566653,17.78z/data=!4m6!3m5!1s0x12e4b1abbd78e779:0xb91b1546083dc8bf!8m2!3d37.065657!4d8.957136!16s%2Fg%2F11h3x5xz8y?hl=fr&entry=ttu"></script>
-
+    <footer>
+        <p>&copy; 2023 Camping El Mgasseb, Béja</p>
+    </footer>
 </body>
 </html>
