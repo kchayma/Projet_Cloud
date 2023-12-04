@@ -2,10 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camping à El Mgasseb, Béja</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
             color: #333;
             margin: 20px;
@@ -35,26 +37,62 @@
             justify-content: space-between;
             margin-bottom: 20px;
         }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #008080;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #008080;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">À Propos</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <header>
         <h1>PARTEZ POUR UN CAMPING PLUS QUE MAGNIFIQUE À EL MGASSEB BEJA</h1>
     </header>
     
-    <p>El Mgasseb, un coin magique attaché au gouvernorat de Bèja du nord-ouest de la Tunisie situé à une centaine de kilomètres de Tunis et à une cinquantaine de kilomètres de la frontière tuniso-algérienne, précisément à Nefza.</p>
+    <section id="about">
+        <p>El Mgasseb, un coin magique attaché au gouvernorat de Bèja du nord-ouest de la Tunisie situé à une centaine de kilomètres de Tunis et à une cinquantaine de kilomètres de la frontière tuniso-algérienne, précisément à Nefza.</p>
+        
+        <img src="elmgasseb-190620-1.jpg" alt="Photo plage EL Mgasseb" />
+        
+        <p>Cet endroit très spécial près du barrage de Sidi El Barrak vous permet de préparer la nourriture, des tentes et des glacières pour une escapade extraordinaire à travers un camping fantastique et une baignade magnifique. Surtout si vous pensez à une grillade délicieuse au bord de la mer dans une ambiance sympathique.</p>
+    </section>
     
-    <img src="elmgasseb-190620-1.jpg" alt="Photo plage EL Mgasseb" />
-    
-    <p>Cet endroit très spécial près du barrage de Sidi El Barrak vous permet de préparer la nourriture, des tentes et des glacières pour une escapade extraordinaire à travers un camping fantastique et une baignade magnifique. Surtout si vous pensez à une grillade délicieuse au bord de la mer dans une ambiance sympathique.</p>
-    
-    <div class="image-container">
+    <section id="gallery" class="image-container">
         <img src="téléchargé.jpg" alt="Photo plage EL Mgasseb" />
         <img src="téléchargé1.jpg" alt="Photo plage EL Mgasseb" />
         <img src="camping-beja-mgasseb-160818-01.jpg" alt="Photo plage EL Mgasseb" />
         <img src="39665608_2100280030223651_1696488025808175104_o.jpg" alt="Photo plage EL Mgasseb" />
-    </div>
+    </section>
 
-    <h1>BIENVENUE</h1>
+    <section id="contact">
+        <h1>CONTACTEZ-NOUS</h1>
+        <p>Adresse: [Votre Adresse]</p>
+        <p>Email: [Votre Email]</p>
+        <p>Téléphone: [Votre Numéro de Téléphone]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Camping El Mgasseb, Béja</p>
+    </footer>
 </body>
 </html>
