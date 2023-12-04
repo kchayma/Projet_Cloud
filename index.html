@@ -48,92 +48,31 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+
+        .transition {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajoutez cette classe aux éléments que vous souhaitez animer */
     </style>
 </head>
 <body>
     <nav>
+        <a href="#welcome">Bienvenue</a>
         <a href="#about">À Propos</a>
         <a href="#gallery">Galerie</a>
         <a href="#contact">Contact</a>
     </nav>
-<!-- Ajoutez cette balise dans la section où vous souhaitez afficher la carte -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
-<script>
-    function initMap() {
-        var myLatLng = {lat: 36.650002, lng: 9.083333}; // Remplacez par les coordonnées de votre emplacement
-        var map = new google.maps.Map(document.getElementById('googleMap'), {
-            center: myLatLng,
-            zoom: 14
-        });
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Camping El Mgasseb, Béja'
-        });
-    }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap"></script>
-/* Ajoutez ceci dans la balise <style> */
-.transition {
-    transition: all 0.3s ease;
-}
-
-/* Ajoutez la classe 'transition' aux éléments que vous souhaitez animer */
-<!-- Ajoutez ces liens dans la section appropriée -->
-<div>
-    Suivez-nous sur les réseaux sociaux :
-    <a href="LIEN_VERS_FACEBOOK" target="_blank">Facebook</a>
-    <a href="LIEN_VERS_TWITTER" target="_blank">Twitter</a>
-    <!-- Ajoutez d'autres liens de réseaux sociaux selon vos besoins -->
-</div>
-<!-- Ajoutez cette section dans la partie appropriée -->
-<section id="testimonials">
-    <h2>Témoignages</h2>
-    <div class="testimonial">
-        <p>Le camping à El Mgasseb était incroyable. Nous avons adoré l'ambiance paisible et la belle plage.</p>
-        <p><em>- Nom du Client</em></p>
-    </div>
-    <!-- Ajoutez d'autres témoignages au besoin -->
-</section>
-/* Ajoutez ceci dans la balise <style> */
-.animation {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-<!-- Ajoutez cette balise dans la section appropriée -->
-<form action="URL_DU_SCRIPT_DE_TRAITEMENT" method="post">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
-
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-
-    <input type="submit" value="Réserver">
-</form>
-<!-- Ajoutez cette section dans la partie appropriée -->
-<section id="faq">
-    <h2>FAQ</h2>
-    <div class="question">
-        <h3>Q : Question 1 ?</h3>
-        <p>R : Réponse à la question 1.</p>
-    </div>
-    <!-- Ajoutez d'autres questions et réponses au besoin -->
-</section>
 
     <header>
         <h1>PARTEZ POUR UN CAMPING PLUS QUE MAGNIFIQUE À EL MGASSEB BEJA</h1>
     </header>
-    
+
     <section id="welcome" class="animation">
         <h2>Bienvenue au Camping El Mgasseb, Béja</h2>
         <p>Nous vous invitons à vivre une expérience unique dans un cadre exceptionnel. Découvrez la beauté de la nature, profitez d'une plage magnifique, et créez des souvenirs inoubliables en famille ou entre amis.</p>
     </section>
-    
+
     <section id="about">
         <p>El Mgasseb, un coin magique attaché au gouvernorat de Bèja du nord-ouest de la Tunisie situé à une centaine de kilomètres de Tunis et à une cinquantaine de kilomètres de la frontière tuniso-algérienne, précisément à Nefza.</p>
         
@@ -141,7 +80,7 @@
         
         <p>Cet endroit très spécial près du barrage de Sidi El Barrak vous permet de préparer la nourriture, des tentes et des glacières pour une escapade extraordinaire à travers un camping fantastique et une baignade magnifique. Surtout si vous pensez à une grillade délicieuse au bord de la mer dans une ambiance sympathique.</p>
     </section>
-    
+
     <section id="gallery" class="image-container">
         <img src="téléchargé.jpg" alt="Photo plage EL Mgasseb" class="animation">
         <img src="téléchargé1.jpg" alt="Photo plage EL Mgasseb" class="animation">
@@ -155,6 +94,34 @@
         <p>Email: [Votre Email]</p>
         <p>Téléphone: [Votre Numéro de Téléphone]</p>
     </section>
+
+    <section id="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonial">
+            <p>Le camping à El Mgasseb était incroyable. Nous avons adoré l'ambiance paisible et la belle plage.</p>
+            <p><em>- Nom du Client</em></p>
+        </div>
+        <!-- Ajoutez d'autres témoignages au besoin -->
+    </section>
+
+    <!-- Ajoutez cette balise dans la section où vous souhaitez afficher la carte -->
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+
+    <script>
+        function initMap() {
+            var myLatLng = {lat: 36.650002, lng: 9.083333}; // Remplacez par les coordonnées de votre emplacement
+            var map = new google.maps.Map(document.getElementById('googleMap'), {
+                center: myLatLng,
+                zoom: 14
+            });
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Camping El Mgasseb, Béja'
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap"></script>
 
     <footer>
         <p>&copy; 2023 Camping El Mgasseb, Béja</p>
