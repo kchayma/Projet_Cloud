@@ -117,23 +117,6 @@
         </ul>
     </section>
 
-    <!-- Ajoutez cette balise dans la section où vous souhaitez afficher la carte -->
-    <div id="googleMap" style="height:400px;width:100%;"></div>
-
-    <script>
-        function initMap() {
-            var myLatLng = {lat: 36.650002, lng: 9.083333}; // Remplacez par les coordonnées de votre emplacement
-            var map = new google.maps.Map(document.getElementById('googleMap'), {
-                center: myLatLng,
-                zoom: 14
-            });
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Camping El Mgasseb, Béja'
-            });
-        }
-    </script>
     
     <footer>
         <p>&copy; 2023 Camping El Mgasseb, Béja</p>
